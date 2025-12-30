@@ -1,0 +1,27 @@
+[gd_scene load_steps=6 format=3 uid="uid://dxtm7xodbbpy8"]
+
+[ext_resource type="Script" uid="uid://bfiwhc2hkweml" path="res://scenes/entlties/player/player.gd" id="1_8afob"]
+[ext_resource type="PackedScene" uid="uid://bhrpmpetkbo54" path="res://scenes/camera/camera_manager.tscn" id="2_dovo2"]
+[ext_resource type="PackedScene" uid="uid://7c0s33eobt2o" path="res://scenes/entlties/player/godette_skin.tscn" id="3_wdalc"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_dovo2"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_x7p2l"]
+height = 2.1699219
+
+[node name="Player" type="CharacterBody3D"]
+collision_layer = 4
+collision_mask = 11
+script = ExtResource("1_8afob")
+
+[node name="CameraManager" parent="." instance=ExtResource("2_dovo2")]
+transform = Transform3D(1.3113417e-07, 0.37784073, -0.9258705, 0, 0.9258705, 0.37784073, 1, -4.954783e-08, 1.2141325e-07, 0, 0.52944565, 0)
+shape = SubResource("SphereShape3D_dovo2")
+spring_length = 2.0
+
+[node name="GodetteSkin" parent="." instance=ExtResource("3_wdalc")]
+transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, 0, -1.004204, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.08496094, 0)
+shape = SubResource("CapsuleShape3D_x7p2l")

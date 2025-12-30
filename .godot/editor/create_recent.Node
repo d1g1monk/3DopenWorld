@@ -1,0 +1,14 @@
+BoneAttachment3D
+AnimationTree
+VBoxContainer
+Label
+StaticBody3D
+CharacterBody3D
+MeshInstance3D
+Area3D
+Node3D
+SpringArm3D
+CollisionShape3D
+CSGBox3D
+Sprite3D
+AnimatedSprite3D

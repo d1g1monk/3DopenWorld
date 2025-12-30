@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bhrpmpetkbo54"]
+
+[ext_resource type="Script" uid="uid://bbxy3snlt8xsp" path="res://scenes/camera/camera_manager.gd" id="1_euayp"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_euayp"]
+
+[node name="CameraManager" type="SpringArm3D"]
+collision_mask = 3
+shape = SubResource("SphereShape3D_euayp")
+spring_length = 5.0
+script = ExtResource("1_euayp")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+current = true
+fov = 76.77418
