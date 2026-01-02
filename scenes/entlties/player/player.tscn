@@ -9,9 +9,9 @@
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_x7p2l"]
 height = 2.1699219
 
-[node name="Player" type="CharacterBody3D"]
+[node name="Player" type="CharacterBody3D" groups=["Player"]]
 collision_layer = 4
-collision_mask = 11
+collision_mask = 31
 script = ExtResource("1_8afob")
 
 [node name="CameraManager" parent="." instance=ExtResource("2_dovo2")]

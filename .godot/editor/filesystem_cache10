@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1767119096
+::res://::1767357477
 icon.svg::CompressedTexture2D::2879002971274559356::1767004486::1767010618::1::::<><><>0<>0<>76fe9b888f3689dd4cdda045f5252a02<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.s3tc.ctex::
 ::res://audio/::1767004774
 hit.wav::AudioStreamWAV::374587415240683190::1756448136::1767004774::1::::<><><>0<>0<>b624bb83e364e84cc90db49569724605<>res://.godot/imported/hit.wav-0ce77c86b567f5096583f88ec20be939.sample::
@@ -9,24 +9,26 @@ sword sound.wav::AudioStreamWAV::3608947949331153035::1730912932::1767004774::1:
 ::res://graphics/::1767094834
 icon.png::CompressedTexture2D::414807754520545157::1727012729::1767094834::1::::<><><>0<>0<>498b8cf05e6c29b7aff66a84be59ad55<>res://.godot/imported/icon.png-697870702e3c5bf8f2ad30a9b0ef43d9.ctex::
 ::res://graphics/characters/::1756456209
-::res://graphics/characters/godette/::1767118828
-godette.glb::PackedScene::2566171444870210049::1724228886::1767119097::1::::<><><>0<>0<>cddfa2e216a1dc5364e83d8471ec9ad8<>res://.godot/imported/godette.glb-d488f3c158a8916bf5cfe329fdaae9e9.scn::uid://bqubrchc7463s::::res://graphics/characters/godette/animations/chop.res
+::res://graphics/characters/godette/::1767182417
+godette.glb::PackedScene::2566171444870210049::1724228886::1767182417::1::::<><><>0<>0<>ae29459db9bb2206a5d14af9d3e0536b<>res://.godot/imported/godette.glb-d488f3c158a8916bf5cfe329fdaae9e9.scn::uid://7d7l32u6v2lo::::res://graphics/characters/godette/animations/chop.res<>uid://w58wbcuyqnoc::::res://graphics/characters/godette/animations/slice.res<>uid://fk8tbije3fgi::::res://graphics/characters/godette/animations/spellcast.res
 godette_godette_faces.png::CompressedTexture2D::2824050464000082230::1724229423::1767094837::1::::<><><>0<>0<>4c2a9ba8daf6341dcce1ad2e0c7a3417<>res://.godot/imported/godette_godette_faces.png-e3a2f61e4080ba1faeb4a84bd5d942e8.s3tc.ctex::
 godette_godette_texture.png::CompressedTexture2D::706469450964479853::1724229423::1767094837::1::::<><><>0<>0<>784ecc6a2ede9a6faf31590e677b905f<>res://.godot/imported/godette_godette_texture.png-7ded8d891df2508175bbbc64c09e55b5.s3tc.ctex::
-::res://graphics/characters/godette/animations/::1767119087
-chop.res::Animation::3550820928467105838::1767119096::0::1::::<><><>0<>0<><>::
-::res://graphics/characters/nagonford/::1767094837
-boss_slice.res::Animation::7649987683601884151::1731230830::0::1::::<><><>0<>0<><>::
-boss_spin.res::Animation::3665422991500011822::1731230830::0::1::::<><><>0<>0<><>::
-Nagonford_Animated.glb::PackedScene::2847208786658728980::1721635147::1767094363::1::::<><><>0<>0<>c784888520cbd2f11c96569dfc6bf18a<>res://.godot/imported/Nagonford_Animated.glb-a77b45b04f57d6ddb290861bd24ed0ce.scn::
+::res://graphics/characters/godette/animations/::1767182522
+chop.res::Animation::2254200230495211464::1767182417::0::1::::<><><>0<>0<><>::
+slice.res::Animation::1608128897440090642::1767182417::0::1::::<><><>0<>0<><>::
+spellcast.res::Animation::373625651873402152::1767182522::0::1::::<><><>0<>0<><>::
+::res://graphics/characters/nagonford/::1767349516
+boss_slice.res::Animation::7649987683601884151::1767349516::0::1::::<><><>0<>0<><>::
+boss_spin.res::Animation::3665422991500011822::1767349516::0::1::::<><><>0<>0<><>::
+Nagonford_Animated.glb::PackedScene::2847208786658728980::1721635147::1767349516::1::::<><><>0<>0<>482ee0218bff363fd5739df32323eec6<>res://.godot/imported/Nagonford_Animated.glb-a77b45b04f57d6ddb290861bd24ed0ce.scn::uid://dg8ygdp7sml1x::::res://graphics/characters/nagonford/boss_slice.res<>uid://bshs8mg6ni8fq::::res://graphics/characters/nagonford/boss_spin.res
 Nagonford_Animated_nagon_texture.png::CompressedTexture2D::1326620475932230686::1724655589::1767094837::1::::<><><>0<>0<>63aacf9508b540c57010249f362cbea2<>res://.godot/imported/Nagonford_Animated_nagon_texture.png-db9534e61df3f3958306cec63d970186.s3tc.ctex::
-::res://graphics/characters/skeleton mage/::1767094840
-Skeleton_Mage.glb::PackedScene::6662760771636701997::1723018560::1767094840::1::::<><><>0<>0<>df6b4be46824b92fa7f0c4e8e51a335e<>res://.godot/imported/Skeleton_Mage.glb-532f75580acf046805f3eaaeffe3786f.scn::
+::res://graphics/characters/skeleton mage/::1767357459
+Skeleton_Mage.glb::PackedScene::6662760771636701997::1723018560::1767357459::1::::<><><>0<>0<>57af95b40800e50ce63ffa6c908a03cc<>res://.godot/imported/Skeleton_Mage.glb-532f75580acf046805f3eaaeffe3786f.scn::
 Skeleton_Mage_skeleton_texture.png::CompressedTexture2D::4923206841042636968::1725203262::1767094834::1::::<><><>0<>0<>c7888c0565f55b88d2dd9d7f5eee678f<>res://.godot/imported/Skeleton_Mage_skeleton_texture.png-6585c284317a3f9f9fbafdef262d25c2.s3tc.ctex::
-::res://graphics/characters/skeleton warrior/::1767094834
-Skeleton_Warrior.glb::PackedScene::3127029419486718186::1723018560::1767004779::1::::<><><>0<>0<>a1d0bc107d862373a22e5e1a33f2c9d7<>res://.godot/imported/Skeleton_Warrior.glb-0dfdff61dbd014345de6f62081b45983.scn::uid://c036fo72vv045::::res://graphics/characters/skeleton warrior/spin.res
+::res://graphics/characters/skeleton warrior/::1767356210
+Skeleton_Warrior.glb::PackedScene::3127029419486718186::1723018560::1767356210::1::::<><><>0<>0<>cc3ffa28bcac76ebfe743b7dfc3a8405<>res://.godot/imported/Skeleton_Warrior.glb-0dfdff61dbd014345de6f62081b45983.scn::uid://c036fo72vv045::::res://graphics/characters/skeleton warrior/spin.res
 Skeleton_Warrior_skeleton_texture.png::CompressedTexture2D::933677135471189887::1725203265::1767094834::1::::<><><>0<>0<>b893148a70ed5a53ab26536d971b7617<>res://.godot/imported/Skeleton_Warrior_skeleton_texture.png-56570f25d6141fc8bfc4b1bca2f84526.s3tc.ctex::
-spin.res::Animation::6587256977212288436::1767004778::0::1::::<><><>0<>0<><>::
+spin.res::Animation::6587256977212288436::1767356209::0::1::::<><><>0<>0<><>::
 ::res://graphics/environment/::1767094848
 castle.blend::PackedScene::8723058948017479931::1726757003::1767094848::1::::<><><>0<>0<>4c52097096355797865cc05964a1fa72<>res://.godot/imported/castle.blend-e30e73426b2e75678218e6afd023e745.scn::uid://ctpnl30whgmef::::res://graphics/environment/textures/nagon_texture.png<>uid://bkbugloojg0lh::::res://graphics/environment/textures/dungeon_texture.png
 import_demo.blend::PackedScene::2830986354604965109::1729767073::1767094848::1::::<><><>0<>0<>43beedd3760792d79f53498d34bc8498<>res://.godot/imported/import_demo.blend-2d05ce507927b68486df56c7d76a9250.scn::uid://ctpnl30whgmef::::res://graphics/environment/textures/nagon_texture.png
@@ -248,22 +250,31 @@ sword_1handed.gltf::PackedScene::5893613706954517965::1725980552::1767094838::1:
 wand.gltf::PackedScene::1810987784760554176::1725980552::1767094837::1::::<><><>0<>0<>92086e01a50c45f23770f3d3d2047d92<>res://.godot/imported/wand.gltf-bc9dcf86b5bd9b38429623da44343fa9.scn::
 ::res://premade/::1767026444
 jump_template.txt::TextFile::-1::1767026444::0::1::::<><><>0<>0<><>::
-::res://scenes/::1767114338
+::res://scenes/::1767355650
 game_manager.gd::GDScript::7415011077461287042::1767031254::0::1::::<>Node<><>0<>0<><>::
 main.gd::GDScript::2452566395889867992::1767007678::0::1::::<>Node3D<><>0<>0<><>::
-main.tscn::PackedScene::8852826014115224014::1767114338::0::1::::<><><>0<>0<><>::uid://ba7bn7heiborw::::res://scenes/main.gd<>uid://cjdh6203ks54l::::res://scenes/ui/ui.tscn<>uid://ci0vn44yk0hyb::::res://scenes/objects/objects.gd<>uid://bsdn732xo4no3::::res://graphics/grid/Light/texture_10.png<>uid://og8hgistyyx8::::res://graphics/grid/Dark/texture_04.png<>uid://dxtm7xodbbpy8::::res://scenes/entlties/player/player.tscn
+main.tscn::PackedScene::8852826014115224014::1767355650::0::1::::<><><>0<>0<><>::uid://ba7bn7heiborw::::res://scenes/main.gd<>uid://cjdh6203ks54l::::res://scenes/ui/ui.tscn<>uid://ci0vn44yk0hyb::::res://scenes/objects/objects.gd<>uid://bsdn732xo4no3::::res://graphics/grid/Light/texture_10.png<>uid://og8hgistyyx8::::res://graphics/grid/Dark/texture_04.png<>uid://dxtm7xodbbpy8::::res://scenes/entlties/player/player.tscn<>uid://dlcrbeat0g2fe::::res://scenes/entlties/enemy/boss.tscn<>uid://c1425rqwl613a::::res://scenes/entlties/enemy/skeletionwarrior.tscn<>uid://cucllcujh70q0::::res://scenes/entlties/enemy/skeleton_mage.tscn
 ::res://scenes/camera/::1767096791
 camera_manager.gd::GDScript::2505598391759504807::1767029630::0::1::::<>Node3D<><>0<>0<><>::
 camera_manager.tscn::PackedScene::2913769990302862425::1767096791::0::1::::<><><>0<>0<><>::uid://bbxy3snlt8xsp::::res://scenes/camera/camera_manager.gd
-::res://scenes/entlties/::1767095329
-::res://scenes/entlties/player/::1767119087
-godette_skin.gd::GDScript::1210102431738091579::1767117198::0::1::::<>Node3D<><>0<>0<><>::
-godette_skin.tscn::PackedScene::2251723335143445848::1767119087::0::1::::<><><>0<>0<><>::uid://bctcp65yp8t3f::::res://graphics/characters/godette/godette.glb<>uid://righfb1bxlrf::::res://scenes/entlties/player/godette_skin.gd<>uid://cp757r6txb0j6::::res://graphics/weapons/sword_1handed.gltf<>uid://cbf5176yt1e2d::::res://graphics/weapons/barbarian_texture.png<>uid://dydnnq3ww2uyk::::res://graphics/weapons/shield.gltf.glb
-player.gd::GDScript::2755228345402638243::1767118608::0::1::::<>CharacterBody3D<><>0<>0<><>::
-player.tscn::PackedScene::8813615611201353221::1767118662::0::1::::<><><>0<>0<><>::uid://bfiwhc2hkweml::::res://scenes/entlties/player/player.gd<>uid://bhrpmpetkbo54::::res://scenes/camera/camera_manager.tscn<>uid://7c0s33eobt2o::::res://scenes/entlties/player/godette_skin.tscn
+::res://scenes/entlties/::1767268697
+::res://scenes/entlties/enemy/::1767357340
+boss.gd::GDScript::8635524649211097539::1767352469::0::1::::<>Enemy<><>0<>0<><>::
+boss.tscn::PackedScene::7936502272267062970::1767356912::0::1::::<><><>0<>0<><>::uid://bksd57feoebxh::::res://scenes/entlties/enemy/enemy.tscn<>uid://dvbd3gxchpa0j::::res://scenes/entlties/enemy/boss.gd<>uid://bgthd3k5kyak7::::res://graphics/characters/nagonford/Nagonford_Animated.glb
+enemy.gd::GDScript::2695775422447294404::1767355525::0::1::::Enemy<>CharacterBody3D<><>0<>0<><>::
+enemy.tscn::PackedScene::3125705333113783385::1767355646::0::1::::<><><>0<>0<><>::uid://ben4a6u71lfbw::::res://scenes/entlties/enemy/enemy.gd
+skeletionwarrior.gd::GDScript::5867739817604709244::1767355571::0::1::::<>Enemy<><>0<>0<><>::
+skeletionwarrior.tscn::PackedScene::6659312108093970568::1767354901::0::1::::<><><>0<>0<><>::uid://bksd57feoebxh::::res://scenes/entlties/enemy/enemy.tscn<>uid://bks0ynvp57mq1::::res://graphics/characters/skeleton warrior/Skeleton_Warrior.glb<>uid://cpum22bl7j2mq::::res://scenes/entlties/enemy/skeletionwarrior.gd<>uid://cqxi7o0pyi1mt::::res://graphics/weapons/bone.gltf.glb
+skeleton_mage.gd::GDScript::1846443961302130319::1767357292::0::1::::<>Enemy<><>0<>0<><>::
+skeleton_mage.tscn::PackedScene::6181434662670703277::1767357340::0::1::::<><><>0<>0<><>::uid://bksd57feoebxh::::res://scenes/entlties/enemy/enemy.tscn<>uid://1kowrualh62v::::res://scenes/entlties/enemy/skeleton_mage.gd<>uid://c16qxxd7mhpfp::::res://graphics/characters/skeleton mage/Skeleton_Mage.glb<>uid://02ix7c6cfe1u::::res://graphics/weapons/wand.gltf<>uid://cbf5176yt1e2d::::res://graphics/weapons/barbarian_texture.png
+::res://scenes/entlties/player/::1767276158
+godette_skin.gd::GDScript::1210102431738091579::1767268386::0::1::::<>Node3D<><>0<>0<><>::
+godette_skin.tscn::PackedScene::2251723335143445848::1767268386::0::1::::<><><>0<>0<><>::uid://bctcp65yp8t3f::::res://graphics/characters/godette/godette.glb<>uid://righfb1bxlrf::::res://scenes/entlties/player/godette_skin.gd<>uid://cp757r6txb0j6::::res://graphics/weapons/sword_1handed.gltf<>uid://bgh8x0rsl78s5::::res://graphics/characters/godette/godette_godette_faces.png<>uid://cbf5176yt1e2d::::res://graphics/weapons/barbarian_texture.png<>uid://02ix7c6cfe1u::::res://graphics/weapons/wand.gltf<>uid://dydnnq3ww2uyk::::res://graphics/weapons/shield.gltf.glb
+player.gd::GDScript::2755228345402638243::1767183951::0::1::::<>CharacterBody3D<><>0<>0<><>::
+player.tscn::PackedScene::8813615611201353221::1767276158::0::1::::<><><>0<>0<><>::uid://bfiwhc2hkweml::::res://scenes/entlties/player/player.gd<>uid://bhrpmpetkbo54::::res://scenes/camera/camera_manager.tscn<>uid://7c0s33eobt2o::::res://scenes/entlties/player/godette_skin.tscn
 ::res://scenes/levels/::1767009626
-::res://scenes/objects/::1767025764
-objects.gd::GDScript::5387261401592102261::1767025764::0::1::::<>Node3D<><>0<>0<><>::
+::res://scenes/objects/::1767272307
+objects.gd::GDScript::5387261401592102261::1767272307::0::1::::<>Node3D<><>0<>0<><>::
 ::res://scenes/ui/::1767093266
 ui.gd::GDScript::6844938300578831257::1767093266::0::1::::<>CanvasLayer<><>0<>0<><>::
 ui.tscn::PackedScene::5411215929987952589::1767032049::0::1::::<><><>0<>0<><>::uid://c4r0esvak866x::::res://scenes/ui/ui.gd

@@ -1,0 +1,101 @@
+[gd_scene load_steps=16 format=3 uid="uid://c1425rqwl613a"]
+
+[ext_resource type="PackedScene" uid="uid://bksd57feoebxh" path="res://scenes/entlties/enemy/enemy.tscn" id="1_x72qs"]
+[ext_resource type="PackedScene" uid="uid://bks0ynvp57mq1" path="res://graphics/characters/skeleton warrior/Skeleton_Warrior.glb" id="2_l571o"]
+[ext_resource type="Script" uid="uid://cpum22bl7j2mq" path="res://scenes/entlties/enemy/skeletionwarrior.gd" id="2_t1jil"]
+[ext_resource type="PackedScene" uid="uid://cqxi7o0pyi1mt" path="res://graphics/weapons/bone.gltf.glb" id="3_l571o"]
+[ext_resource type="PackedScene" uid="uid://dydnnq3ww2uyk" path="res://graphics/weapons/shield.gltf.glb" id="5_eoigr"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_x72qs"]
+height = 2.3139648
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_t1jil"]
+animation = &"1H_Melee_Attack_Jump_Chop"
+
+[sub_resource type="AnimationNodeOneShot" id="AnimationNodeOneShot_eoigr"]
+fadein_time = 0.2
+fadeout_time = 0.2
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_eoigr"]
+animation = &"2H_Melee_Idle"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_een21"]
+animation = &"Walking_B"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_860wl"]
+xfade_time = 0.2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_lv673"]
+xfade_time = 0.2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_iuoki"]
+xfade_time = 0.2
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_nm2nx"]
+states/End/position = Vector2(804, 91)
+states/Idle/node = SubResource("AnimationNodeAnimation_eoigr")
+states/Idle/position = Vector2(387, 91)
+states/Walk/node = SubResource("AnimationNodeAnimation_een21")
+states/Walk/position = Vector2(600, 91)
+transitions = ["Start", "Idle", SubResource("AnimationNodeStateMachineTransition_860wl"), "Idle", "Walk", SubResource("AnimationNodeStateMachineTransition_lv673"), "Walk", "Idle", SubResource("AnimationNodeStateMachineTransition_iuoki")]
+graph_offset = Vector2(58, -30)
+
+[sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_qt3g0"]
+graph_offset = Vector2(-290.1159, -37.287064)
+nodes/output/position = Vector2(383.13995, 219.18353)
+nodes/MoveStateMachine/node = SubResource("AnimationNodeStateMachine_nm2nx")
+nodes/MoveStateMachine/position = Vector2(-460, 80)
+nodes/AttackAnimation/node = SubResource("AnimationNodeAnimation_t1jil")
+nodes/AttackAnimation/position = Vector2(-516.86005, 320.81644)
+nodes/AttackOneShot/node = SubResource("AnimationNodeOneShot_eoigr")
+nodes/AttackOneShot/position = Vector2(20, 100)
+node_connections = [&"output", 0, &"AttackOneShot", &"AttackOneShot", 0, &"MoveStateMachine", &"AttackOneShot", 1, &"AttackAnimation"]
+
+[node name="SkeletonWarrior" instance=ExtResource("1_x72qs")]
+script = ExtResource("2_t1jil")
+attack_radius = 1.5
+
+[node name="CollisionShape3D" parent="." index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1855621, 0)
+shape = SubResource("CapsuleShape3D_x72qs")
+
+[node name="AnimationTree" parent="." index="1"]
+root_node = NodePath("../Skin")
+tree_root = SubResource("AnimationNodeBlendTree_qt3g0")
+anim_player = NodePath("../Skin/AnimationPlayer")
+parameters/AttackOneShot/active = false
+parameters/AttackOneShot/internal_active = false
+parameters/AttackOneShot/request = 0
+
+[node name="AttackTimer" parent="Timers" index="0"]
+wait_time = 2.0
+autostart = true
+
+[node name="Skin" parent="." index="3" instance=ExtResource("2_l571o")]
+
+[node name="Rig" parent="Skin" index="0"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0, 0)
+
+[node name="BoneAttachment3D" type="BoneAttachment3D" parent="Skin/Rig/Skeleton3D" index="10"]
+transform = Transform3D(-0.999999, 4.6839318e-07, 4.573103e-07, 3.9779994e-07, -5.8875344e-07, 0.99999946, 3.9761645e-07, 0.99999946, 5.358822e-07, -0.8831323, 1.0492611, -7.275953e-07)
+bone_name = "handslot.r"
+bone_idx = 13
+
+[node name="bone_gltf" parent="Skin/Rig/Skeleton3D/BoneAttachment3D" index="0" instance=ExtResource("3_l571o")]
+transform = Transform3D(1, 8.881784e-15, 0, -4.2632564e-14, 1.0000001, -1.4901161e-08, 0, 1.4901161e-08, 1.0000001, 5.9604645e-08, 0.10705313, -0.016230017)
+
+[node name="BoneAttachment3D2" type="BoneAttachment3D" parent="Skin/Rig/Skeleton3D" index="11"]
+transform = Transform3D(-0.99999887, -3.9761176e-07, -3.6790345e-07, -4.658428e-07, -5.3096744e-07, 0.99999934, -4.758466e-07, 0.99999934, 6.2344856e-07, 0.88313216, 1.0492611, -6.8114986e-07)
+bone_name = "handslot.l"
+bone_idx = 8
+
+[node name="shield_gltf" parent="Skin/Rig/Skeleton3D/BoneAttachment3D2" index="0" instance=ExtResource("5_eoigr")]
+transform = Transform3D(1, 0, -2.842171e-14, 0, 1, -1.1546021e-14, -2.842171e-14, -6.251134e-14, 1, 0, 0, 0)
+
+[node name="shield" parent="Skin/Rig/Skeleton3D/BoneAttachment3D2/shield_gltf" index="0"]
+transform = Transform3D(1, 0, -1.7053026e-13, 0, 1, -1.1546103e-14, -1.7053026e-13, -3.4672845e-13, 1, -1.1920929e-07, -6.727623e-08, 0.107910395)
+
+[connection signal="timeout" from="Timers/AttackTimer" to="." method="_on_attack_timer_timeout"]
+
+[editable path="Skin"]
+[editable path="Skin/Rig/Skeleton3D/BoneAttachment3D2/shield_gltf"]

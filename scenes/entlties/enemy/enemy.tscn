@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://bksd57feoebxh"]
+
+[ext_resource type="Script" uid="uid://ben4a6u71lfbw" path="res://scenes/entlties/enemy/enemy.gd" id="1_y4ljl"]
+
+[node name="Enemy" type="CharacterBody3D"]
+collision_layer = 8
+collision_mask = 31
+script = ExtResource("1_y4ljl")
+attack_radius = 13.0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+
+[node name="Timers" type="Node" parent="."]
+
+[node name="AttackTimer" type="Timer" parent="Timers"]

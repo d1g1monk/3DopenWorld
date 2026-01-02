@@ -1,3 +1,6 @@
-res://graphics/characters/godette/animations/chop.res
-res://scenes/entlties/player/godette_skin.tscn
-res://scenes/entlties/player/godette_skin.gd
+res://scenes/entlties/enemy/skeleton_mage.tscn
+res://scenes/entlties/enemy/enemy.gd
+res://scenes/entlties/enemy/skeletionwarrior.tscn
+res://scenes/entlties/enemy/skeletionwarrior.gd
+res://scenes/entlties/enemy/skeleton_mage.gd
+res://scenes/main.tscn
